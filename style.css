@@ -5,20 +5,33 @@
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
-body {
-  background: #0c1b26;
-  color: #fff;
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* 🔒 stops sideways scroll */
 }
 
-/* NAV */
+body {
+  background: #0c1b26;
+  color: #ffffff;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- NAV ---------- */
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 25px 50px;
+  align-items: center;
+  padding: 25px 0;
 }
 
 .nav a {
-  margin-left: 25px;
+  margin-left: 20px;
   text-decoration: none;
   color: #aaa;
 }
@@ -27,17 +40,23 @@ body {
   color: #ff6b4a;
 }
 
-/* HERO */
+/* ---------- HERO ---------- */
 .hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 60px 50px;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 0;
   flex-wrap: wrap;
 }
 
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
 .hero-text h1 {
-  font-size: 52px;
+  font-size: clamp(36px, 5vw, 52px);
 }
 
 .hero-text h1 span {
@@ -45,13 +64,13 @@ body {
 }
 
 .hero-text h2 {
-  font-size: 34px;
+  font-size: clamp(24px, 4vw, 34px);
   margin-top: 10px;
 }
 
 .intro {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 16px;
   opacity: 0.7;
 }
 
@@ -64,6 +83,7 @@ body {
   border-radius: 6px;
   text-decoration: none;
   margin-right: 10px;
+  display: inline-block;
 }
 
 .primary {
@@ -76,68 +96,80 @@ body {
   color: #ff6b4a;
 }
 
-/* IMAGE */
+/* ---------- HERO IMAGE ---------- */
 .hero-image {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
 .ring {
-  width: 280px;
-  height: 280px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
-  border: 12px solid #ff6b4a;
+  border: 10px solid #ff6b4a;
   position: absolute;
-  top: 20px;
-  left: 20px;
 }
 
 .hero-image img {
-  width: 240px;
+  width: 200px;
   position: relative;
   z-index: 2;
 }
 
-/* SKILLS */
+/* ---------- SKILLS ---------- */
 .skills {
   display: flex;
   justify-content: center;
-  gap: 35px;
-  padding: 30px;
-  opacity: 0.5;
+  gap: 25px;
+  padding: 30px 0;
+  opacity: 0.6;
   flex-wrap: wrap;
 }
 
-/* ABOUT */
+/* ---------- ABOUT ---------- */
 .about {
   display: flex;
-  gap: 50px;
-  padding: 70px 50px;
+  gap: 40px;
+  padding: 70px 0;
   flex-wrap: wrap;
+}
+
+.services {
+  flex: 1;
+  min-width: 260px;
 }
 
 .services .service {
-  margin-bottom: 25px;
-  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 260px;
 }
 
 .about-text h3 {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .stats {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   margin-top: 25px;
+  flex-wrap: wrap;
 }
 
 .stats strong {
-  font-size: 30px;
+  font-size: 28px;
   color: #ff6b4a;
 }
 
-/* EXPERIENCE */
+/* ---------- EXPERIENCE ---------- */
 .experience {
-  padding: 70px 50px;
+  padding: 70px 0;
   text-align: center;
 }
 
@@ -150,18 +182,18 @@ body {
 
 .card {
   background: #122635;
-  padding: 35px;
+  padding: 30px;
   border-radius: 12px;
 }
 
-/* FOOTER */
+/* ---------- FOOTER ---------- */
 footer {
-  padding: 40px;
+  padding: 40px 0;
   text-align: center;
   opacity: 0.6;
 }
 
-/* MOBILE */
+/* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
   .nav nav {
     display: none;
@@ -171,7 +203,13 @@ footer {
     text-align: center;
   }
 
-  .stats {
+  .cta {
+    display: flex;
     flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    margin-right: 0;
   }
 }

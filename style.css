@@ -18,8 +18,9 @@ body {
 /* ---------- CONTAINER ---------- */
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  width: 100%;
+  padding-inline: 1rem;
+  margin-inline: auto;
 }
 
 /* ---------- NAV ---------- */
@@ -195,7 +196,7 @@ footer {
 
 /* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
-  .nav nav {
+  .nav a {
     display: none;
   }
 

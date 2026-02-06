@@ -1,9 +1,9 @@
-* {
+/* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Arial, sans-serif;
-}
+}*/
 
 html, body {
   width: 100%;
@@ -13,6 +13,7 @@ html, body {
 body {
   background: #0c1b26;
   color: #ffffff;
+  margin: 0;
 }
 
 /* ---------- CONTAINER ---------- */
@@ -29,6 +30,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 25px 0;
+  min-width: 0;
 }
 
 .nav a {
@@ -196,9 +198,10 @@ footer {
 
 /* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
-  .nav a {
+  .nav-links {
     display: none;
   }
+
 
   .hero {
     text-align: center;

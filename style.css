@@ -20,7 +20,7 @@ body {
 .container {
   max-width: 1200px;
   width: 100%;
-  padding-inline: 50px;
+  padding-inline: 20px;
   margin-inline: auto;
 }
 

@@ -5,15 +5,15 @@
   font-family: "Segoe UI", Arial, sans-serif;
 }*/
 
-html, body {
+/*html, body {
   width: 100%;
-  overflow-x: hidden; /* 🔒 stops sideways scroll */
-}
+  overflow-x: hidden;
+}*/
 
 body {
   background: #0c1b26;
   color: #ffffff;
-  margin: 30px;
+  margin: 0px;
   padding: 30px;
 }
 
@@ -107,6 +107,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
+  overflow: visible; /* 👈 key */
 }
 
 .ring {
@@ -115,6 +116,9 @@ body {
   border-radius: 50%;
   border: 10px solid #ff6b4a;
   position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-image img {

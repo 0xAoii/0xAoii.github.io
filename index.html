@@ -1,90 +1,263 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | Operations & Technician</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<header>
-  <div class="container">
-    <nav class="nav">
-      <div class="logo">RJ45</div>
+<body>
+<!-- Navigation -->
+  <header>
+   <div class="container">
+     <nav class="nav-container">
+      <div class="logo">RUTHCHEL</div>
 
       <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact me</a>
       </div>
-    </nav>
+     </nav>
   </div>
-</header>
+ </header>
 
-<section class="hero" id="home">
-  <div class="hero-text">
-    <h1>Hello<span>.</span></h1>
-    <p class="intro">I’m Arjay Morante</p>
-    <h2>Operations & Technical Professional</h2>
+<!-- Hero -->
 
-    <div class="cta">
-      <a href="#contact" class="btn primary">Got a role?</a>
-      <a href="resume.pdf" class="btn outline">My resume</a>
-    </div>
+ <section id="home" class="hero">
+   <div class="hero-content">
+    <p class="intro">Hi, I am</p>
+    <h1 class="name">Ruthchel Moreno</h1>
+
+    <h2 class="role">UI/UX Designer</h2>
+
+    <p class="description">
+      I’m a curious problem-solver who enjoys turning ideas into clean,
+      usable digital experiences. I focus on simplicity, clarity,
+      and designs that actually make sense for users.
+    </p>
+   </div>
+   <div class="hero-image">
+    <img src="hero.png" alt="Ruthchel photo">
   </div>
+ </section>
 
-  <div class="hero-image">
-    <div class="ring"></div>
-    <img src="assets/profile.png" alt="Profile">
-  </div>
-</section>
+<!-- Services -->
 
-<section class="skills">
-  <span>Operations</span>
-  <span>Technician</span>
-  <span>Assembler</span>
-  <span>Quality Inspection</span>
-  <span>Documentation</span>
-</section>
-
-<section class="about" id="about">
-  <div class="services">
-    <div class="service">⚙️ Technical Support</div>
-    <div class="service">🔧 Assembly & Maintenance</div>
-    <div class="service">✅ Quality Control</div>
-  </div>
-
-  <div class="about-text">
-    <h3>About me</h3>
+ <section id="services" class="services">
+   <div class="services-header">
+    <h2>Services</h2>
     <p>
-      I have experience across operations, technical work, assembly,
-      and quality inspection. I focus on accuracy, safety, and keeping
-      systems running efficiently in structured environments.
+      I design user-focused digital experiences that balance aesthetics,
+      usability, and real-world needs.
+    </p>
+   </div>
+
+   <div class="services-grid">
+    <div class="service-card">
+      <div class="icon">🎨</div>
+      <h3>UI Design</h3>
+      <p>
+        Clean, modern interface designs focused on clarity, consistency,
+        and visual hierarchy using Figma.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🧠</div>
+      <h3>UX Research & Wireframing</h3>
+      <p>
+        User flows, wireframes, and structure planning to ensure intuitive
+        navigation and meaningful interactions.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">📱</div>
+      <h3>Web & App Prototyping</h3>
+      <p>
+        Interactive prototypes built in Figma to visualize user journeys
+        before development begins.
+      </p>
+     </div>
+   </div>
+ </section>
+
+<!-- About Me -->
+
+ <section id="about" class="about">
+   <div class="about-container">
+
+    <div class="about-image">
+      <img src="about.jpg" alt="About me photo">
+    </div>
+
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p class="subtitle">
+        User Interface & User Experience Designer
+      </p>
+
+      <p class="about-text">
+        I’m a UI/UX designer who enjoys creating digital experiences that feel
+        simple, intuitive, and purposeful. I focus on understanding users,
+        structuring clear layouts, and designing interfaces that solve real
+        problems.
+      </p>
+
+      <p class="about-text">
+        I work primarily with Figma to design web and application interfaces,
+        build wireframes, and create interactive prototypes. I believe good
+        design is not just about how it looks, but how it works and how it
+        makes people feel.
+      </p>
+
+      <a href="#" class="btn">Download CV</a>
+    </div>
+
+   </div>
+ </section>
+
+<!-- Portfolio -->
+
+ <section id="portfolio" class="portfolio">
+  <div class="portfolio-header">
+    <h2>Portfolio</h2>
+
+    <div class="portfolio-filters">
+      <button class="active">All</button>
+      <button>UI Design</button>
+      <button>UX Research</button>
+      <button>Wireframing</button>
+      <button>Prototyping</button>
+    </div>
+   </div>
+
+   <div class="portfolio-grid">
+    <div class="portfolio-card">
+      <img src="ui-design-1.jpg" alt="UI Design Project">
+      <div class="card-info">
+        <h3>Dashboard Interface</h3>
+        <span>UI Design</span>
+      </div>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="ux-research-1.jpg" alt="UX Research Project">
+      <div class="card-info">
+        <h3>User Flow Analysis</h3>
+        <span>UX Research</span>
+      </div>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="wireframe-1.jpg" alt="Wireframe Project">
+      <div class="card-info">
+        <h3>Website Wireframes</h3>
+        <span>Wireframing</span>
+      </div>
+     </div>
+
+    <div class="portfolio-card">
+      <img src="prototype-1.jpg" alt="Prototype Project">
+      <div class="card-info">
+        <h3>Mobile App Prototype</h3>
+        <span>Prototyping (Figma)</span>
+      </div>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="ui-design-2.jpg" alt="UI Design Project">
+      <div class="card-info">
+        <h3>Landing Page Design</h3>
+        <span>UI Design</span>
+      </div>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="prototype-2.jpg" alt="Prototype Project">
+      <div class="card-info">
+        <h3>Web App Prototype</h3>
+        <span>Prototyping (Figma)</span>
+      </div>
+    </div>
+   </div>
+ </section>
+
+<!-- Contact -->
+
+ <section id="contact" class="contact">
+   <div class="contact-container">
+    <h2>Contact Me</h2>
+    <p class="contact-subtitle">
+      Cultivating Connections: Reach Out And Connect With Me
     </p>
 
-    <div class="stats">
-      <div><strong>120+</strong><span>Tasks completed</span></div>
-      <div><strong>95%</strong><span>Accuracy rate</span></div>
-      <div><strong>10+</strong><span>Years experience</span></div>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+
+      <input type="tel" placeholder="Phone Number">
+      <select>
+        <option value="">Service Of Interest</option>
+        <option>UI Design</option>
+        <option>UX Research</option>
+        <option>Wireframing</option>
+        <option>Prototyping (Figma)</option>
+      </select>
+
+      <input type="text" placeholder="Timeline">
+      <textarea placeholder="Project Details..."></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+   </div>
+ </section>
+
+<!-- Footer -->
+
+ <footer class="footer">
+   <div class="footer-container">
+
+    <div class="footer-logo">LOGO</div>
+
+    <nav class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact me</a>
+    </nav>
+
+    <div class="footer-socials">
+      <a href="#" aria-label="Instagram">◎</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="Behance">Be</a>
     </div>
+
+    <div class="footer-contact">
+      <span>✉ ruthchelm56@gmail.com</span>
+      <span>📞 +63 927 449 3230</span>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p class="footer-copy">
+      Designed by @arjay.morante UI/UX designer
+    </p>
+
   </div>
-</section>
-
-<section class="experience" id="experience">
-  <h3>Experience</h3>
-  <div class="cards">
-    <div class="card">Operations Clerk</div>
-    <div class="card">Technician</div>
-    <div class="card">Assembler Technician</div>
-    <div class="card">Quality Inspector</div>
-  </div>
-</section>
-
-<footer id="contact">
-  <p>Contact: arjaymorante13@gmail.com</p>
-</footer>
-
-</body>
+ </footer>
+  
+ </body>
 </html>

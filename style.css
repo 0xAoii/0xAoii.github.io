@@ -442,7 +442,16 @@ header {
   .name {
     font-size: 40px;
   }
+   
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .hero-image img {
+    width: 260px;
+    margin-top: 40px;
+  }
   .role {
     font-size: 30px;
   }

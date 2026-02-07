@@ -10,10 +10,6 @@
   --text-muted: #9a9a9a;
 }
 
-html, body {
-   overflow-x:hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -439,37 +435,41 @@ header {
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 60px 24px;   /* ⬅ reduce side padding */
-  }
-}
-  .portfolio {
-    margin-left: 0;
-    margin-right: 0;
+    padding: 60px 24px;
   }
 
   .name {
     font-size: 40px;
   }
-   
-  .hero {
-    flex-direction: column;
-    text-align: center;
+
+  .role {
+    font-size: 30px;
   }
 
   .hero-image img {
     width: 260px;
     margin-top: 40px;
   }
-  .role {
-    font-size: 30px;
-  }
 
   .about-container {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .portfolio {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .contact-form {
@@ -480,23 +480,19 @@ header {
   .contact-form button {
     grid-column: span 1;
   }
+
   .footer-nav {
     flex-direction: column;
     gap: 12px;
   }
 
-  .footer-nav a {
-    font-size: 13px;
-  }
-
+  .footer-nav a,
   .footer-contact {
-    flex-direction: column;
-    gap: 8px;
     font-size: 13px;
   }
 
   .footer-copy {
     font-size: 11px;
-    line-height: 1.4;
   }
 }
+

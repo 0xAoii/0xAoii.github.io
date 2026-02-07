@@ -10,6 +10,10 @@
   --text-muted: #9a9a9a;
 }
 
+html, body {
+   overflow-x:hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -435,8 +439,15 @@ header {
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 24px;   /* ⬅ reduce side padding */
+  }
+}
+  .portfolio {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .name {
@@ -468,5 +479,24 @@ header {
   .contact-form textarea,
   .contact-form button {
     grid-column: span 1;
+  }
+  .footer-nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-nav a {
+    font-size: 13px;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .footer-copy {
+    font-size: 11px;
+    line-height: 1.4;
   }
 }
